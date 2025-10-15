@@ -13,3 +13,9 @@ def default_route():
     return "You have reached default route, Back-end server is listening..."
 
 
+@app.get("/example")
+def get_example():
+    """
+    This endpoint return a JSON object consisting of a simple message.
+    """
+    return {"message": "Hello World!", "year":2025}
